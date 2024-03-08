@@ -11,8 +11,26 @@
       padding: 0px;
     }
 
+    h3 {
+      margin: 3px;
+    }
+
     h2 {
       color: cadetblue;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    h1 {
+      margin: 5px;
+    }
+
+    ul {
+      margin: 3px;
+    }
+
+    p {
+      margin: 5px;
     }
 
     .afour {
@@ -24,14 +42,13 @@
 </head>
 
 <body>
-  <div class="afour" style="background-color:white;height:100%;">
+  <div style="background-color:white;height:100%;">
     <div>
       <div>
         <h1>Willem Leitso</h1>
-        <p>Email: <a href="mailto:willem@leit.so">willem@leit.so</a></p>
-        <p>GitHub: <a href="https://github.com/willemml">github.com/willemml</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/willemml">linkedin.com/in/willemml</a></p>
-        <p>Location: Vancouver, BC, Canada (PST)</p>
+        <p>Email: <a href="mailto:willem@leit.so">willem@leit.so</a>, GitHub: <a
+            href="https://github.com/willemml">github.com/willemml</a>, LinkedIn: <a
+            href="https://www.linkedin.com/in/willemml">linkedin.com/in/willemml</a>, Location: Vancouver (PST)</p>
       </div>
 
       <div>
@@ -41,7 +58,6 @@
           Enjoys creating computer software with the aim of learning about new technologies and improving existing ones.
           Has a large amount of experience writing backend web applications and libraries.
           Enjoys programming embedded devices from microcontrollers to FPGAs.
-          Spends time exploring integration between software and computer motion systems.
           Aims to continue learning about and implementing new technologies in a professional environment.
         </p>
       </div>
@@ -52,22 +68,74 @@
           <li>Programming/scripting languages: Rust, Java, C, Python, Javascript, Bash, Swift</li>
           <li>Development Tools: Git, Maven, Jenkins, GitHub Actions, Nix, Cucumber</li>
           <li>Software Design Concepts: binary data encoding/decoding, data encryption, API design, performance
-            optimization,
-            user interface design</li>
+            optimization</li>
           <li>Project organization: Agile, Jira, GitHub Flow</li>
           <li>API models: RESTful, GraphQL</li>
           <li>Web Technologies: Jekyll, NodeJS, WebSockets, Electron, ReactJS, React Native</li>
-          <li>Documentation: Tex, Man, MediaWiki</li>
           <li>Operating Systems: Linux (NixOS, Ubuntu, Arch), FreeBSD, macOS</li>
           <li>Monitoring: Nagios, Prometheus, Grafana</li>
           <li>Database: SQL, Redis</li>
-          <li>Container Runtimes: colima, Docker</li>
-          <li>Virtualization: Qemu, libvirt</li>
-          <li>Bare Metal Provisionning: PXE Boot, Nix</li>
+          <li>Containerization/Orchestration: colima, Docker, Swarm, Kubernetes</li>
           <li>HTTP Software: nginx, Apache</li>
           <li>Networking Technologies: DNS, IP, VPN, DHCP, HTTP, SSH, ZeroTier</li>
         </ul>
       </div>
+
+      <div>
+        <h2>Experience</h2>
+        <div>
+          <h3>Software Developer, Orlia Inc., July 2022 - December 2022</h3>
+          <p>Designed and created the first version of an online shopping list management and sharing platform.</p>
+          <ul>
+            <li>Created an API using the GraphQL model to enable intuitive client implementation and easy testing</li>
+            <li>Wrote a backend server in Rust using warp enabling low power high performance delivery of content</li>
+            <li>Used Material UI and ReactJS to create a modern and user friendly web interface</li>
+            <li>Implemented authentication using Google's OAuth service enabling low maintenance and reliable
+              authentication</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Minecraft Server Management, April 2020 - August 2021</h3>
+          <p>Ran a public Minecraft server that was used joined by over 6000 users.</p>
+          <ul>
+            <li>Used proxmox to manage virtual machines and containers isolating services</li>
+            <li>Managed an online shop selling cosmetic perks to pay for server hosting</li>
+            <li>Monitored server status using Prometheus, Grafana, and Nagios to enable outage prediction</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Computer Consultant, College Jeanne d'Arc, October 2018 - June 2019</h3>
+          <p>Managed, configured, and repaired the school computer systems</p>
+          <ul>
+            <li>Investigated and reported issues and key milestones to school managment</li>
+            <li>Created invoices and part orders to document repairs and expenditures</li>
+            <li>Taught staff how to use new systems in an efficient and reliable way</li>
+          </ul>
+        </div>
+        <div>
+          <h3>DevOps Intern, Liberty Global, November 2018</h3>
+          <p>Created a ReactJS application to display kafka topics in a human readable fashion. One week internship with
+            the DevOps team.</p>
+          <ul>
+            <li>Used ReactJS components to create an intuitive and easily readable user interface</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Junior Web Developer, Blaze Telecommunications Inc., August 2018</h3>
+          <p>Re-created the company website using Jekyll.</p>
+          <ul>
+            <li>Created a Jekyll theme matching the original website's look</li>
+            <li>Configured automatic Jekyll building and deployment to a static site for a simplified workflow</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="display:inline">Education</h2>
+        <h3 style="display:inline">Mining Engineering at the University of British Columbia, September 2022 - Present
+        </h3>
+      </div>
+
       <div>
         <h2>Personal Projects</h2>
         <div>
@@ -76,12 +144,13 @@
             async-graphql. Features native iOS/macOS GUI written in Swift as well as a work in progress web UI using
             React. <a href="https://github.com/wicrs/server">github.com/wicrs/server</a></p>
           <ul>
-            <li>Implemented web APIs using RESTful and GraphQL models</li>
+            <li>Implemented web APIs using RESTful and GraphQL models allowing for efficient access from different
+              clients</li>
             <li>Used OpenPGP to enable encryption and identity verification</li>
             <li>Added support for OAuth services such as Google and GitHub</li>
             <li>Created a SwiftUI based client application</li>
             <li>Optimized message handling for very high speeds with low power requirements</li>
-            <li>Implemented search functionality using the Tantiyv full-text search engine (similar to Lucene)</li>
+            <li>Implemented search functionality using the Tantivy full-text search engine (similar to Lucene)</li>
             <li>Supported live message notifications using web sockets</li>
             <li>Made libraries for API support in web clients based on ReactJS, NodeJS, and NextJS</li>
           </ul>
@@ -89,10 +158,8 @@
         <div>
           <h3>Home Lab</h3>
           <p>My home networking systems and servers. One network (family) running TrueNAS for media and kubernetes
-            provisionning
-            over iSCSI. Another network (personal) managed through a NixOS flake. Ran a public Minecraft server for over
-            a year that was used by over 5000 people. This was running on a dedicated server running proxmox, using
-            Prometheus and Grafana for monitoring.</p>
+            provisionning over iSCSI. Another network (personal) managed through a NixOS flake. This was running on a
+            dedicated server running proxmox, using Prometheus and Grafana for monitoring.</p>
           <ul>
             <li>Bootstrapped various machines with linux installations</li>
             <li>Used PXE boot and remote KVM access to configure machines</li>
@@ -100,7 +167,6 @@
             <li>Configured multiple computers and my dotfiles using a NixOS flake <a
                 href="https://github.com/willemml/dotfiles.nix">github.com/willemml/dotfiles.nix</a></li>
             <li>Monitored systems using Nagios, Prometheus, and Grafana</li>
-            <li>Optimized Java memory usage for a Minecraft server via JVM arguments and custom plugins</li>
             <li>Ran an elasticsearch instance for analyzing system and program logs</li>
             <li>Configured a personal email server compliant with Google's spam filters</li>
             <li>Upstreamed bug fixes to programs used in my dotfiles</li>
@@ -113,59 +179,10 @@
               href="https://github.com/nw-rs/rustworks">github.com/nw-rs/rustworks</a>
           <p>
           <ul>
-            <li>Created a bare-metal embedded bootloader</li>
+            <li>Created a custom bare-metal embedded bootloader</li>
             <li>Wrote drivers for QSPI flash based on datasheet specifications</li>
             <li>Used gdb to debug code at an assembly level</li>
-            <li>Created a REPL based UI for testing functionality</li>
             <li>Managed project tasks and external contributions using GitHub issues and pull requests</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <h2>Experience</h2>
-        <div>
-          <h3>Mining Engineering, University of British Columbia, September 2022 - Present</h3>
-        </div>
-        <div>
-          <h3>Construction Laborer, Westcon Contracting, June 2023 - Augest 2023</h3>
-          <p>Framed a three story house with two co-workers.</p>
-        </div>
-        <div>
-          <h3>Software Developer, Orlia Inc., July 2022 - December 2022</h3>
-          <p>Designed and created the first version of an online shopping list management and sharing platform.</p>
-          <ul>
-            <li>Created an API using the GraphQL model</li>
-            <li>Wrote a backend server in Rust using warp</li>
-            <li>Used Material UI and ReactJS to create a modern and user friendly web interface</li>
-            <li>Implemented authentication using Google's OAuth service</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Warehouse Associate, Canadian Tire, May 2021 - February 2022</h3>
-          <p>Receiving new merchandise and distributing product to retail shelving within an energetic, collaborative
-            team setting.</p>
-        </div>
-        <div>
-          <h3>Computer Consultant, College Jeanne d'Arc, October 2018 - June 2019</h3>
-          <p>Managed, configured, and repaired the school computer systems while suggesting new policies to make their
-            usage easier and more efficient.</p>
-          <ul>
-            <li>Investigated and reported issues</li>
-            <li>Created invoices and part orders</li>
-            <li>Taught staff how to use new systems</li>
-          </ul>
-        </div>
-        <div>
-          <h3>DevOps Intern, Liberty Global, November 2018</h3>
-          <p>Created a ReactJS application to display kafka topics in a human readable fashion. One week internship with
-            the DevOps team.</p>
-        </div>
-        <div>
-          <h3>Junior Web Developer, Blaze Telecommunications Inc., August 2018</h3>
-          <p>Re-created the company website using Jekyll.</p>
-          <ul>
-            <li>Created a Jekyll theme matching the original website's look</li>
-            <li>Configured automatic Jekyll building and deployment to a static site</li>
           </ul>
         </div>
       </div>
