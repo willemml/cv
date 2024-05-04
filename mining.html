@@ -39,9 +39,19 @@
       margin-right: auto;
     }
 
-    .column {
+    .column1 {
       float: left;
-      width: 33.33%;
+      width: 20%;
+    }
+
+    .column2 {
+      float: left;
+      width: 40%;
+    }
+
+    .column3 {
+      float: left;
+      width: 40%;
     }
 
     .row:after {
@@ -81,7 +91,7 @@
       <div>
         <h3>Technical Expertise</h3>
         <div class="row">
-          <div class="column">
+          <div class="column1">
             <h4>Tools</h4>
             <ul>
               <li>Angle Grinder</li>
@@ -91,17 +101,17 @@
               <li>Table Saw</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column2">
             <h4>Computer</h4>
             <ul>
               <li>Spreadsheets (Excel, Google)</li>
               <li>Programming (C, Python, etc.)</li>
-              <li>CAD (Fusion 360, FreeCAD, KiCAD)</li>
+              <li>CAD (Fusion 360, KiCAD)</li>
               <li>Office Suite, G-Suite</li>
               <li>MATLAB, R</li>
             </ul>
           </div>
-          <div class="column">
+          <div class="column3">
             <h4>Skills</h4>
             <ul>
               <li>Framing</li>
@@ -128,58 +138,12 @@
           </ul>
         </div>
         <div>
-          <h4>Software Developer, Orlia Inc., July 2022 - December 2022</h4>
-          <p>Designed and created an online shopping list management and sharing platform.</p>
-          <ul>
-            <li>Created an API using the GraphQL model to enable intuitive client implementation and easy testing</li>
-            <li>Used Material UI and ReactJS to create a modern and user-friendly web interface</li>
-            <li>Implemented authentication using Google's OAuth service enabling low-maintenance and reliable
-              authentication</li>
-          </ul>
-        </div>
-        <div>
           <h4>Warehouse & Automotive Sales Associate, Canadian Tire, April 2021 - February 2022</h4>
           <p>Helping customers locate parts, receiving new merchandise, and distributing product to retail shelving
             within an energetic, collaborative team setting.</p>
           <ul>
             <li>Helped customers find appropriate replacement parts for their vehicles and book repair appointments</li>
             <li>Received and sorted new merchandise for warehouse storage and display</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Minecraft Server Management, April 2020 - August 2021</h4>
-          <p>Administrated a public Minecraft server that was joined by over 6000 users. The Minecraft server is a
-            Java application running in a JVM that I tuned for memory efficiency and low latency. I used custom
-            monitoring and automation systems to maintain 99% uptime.</p>
-          <ul>
-            <li>Used proxmox to manage virtual machines and containers isolating services</li>
-            <li>Managed an online shop selling cosmetic perks to pay for server hosting</li>
-            <li>Monitored server status using Prometheus, Grafana, and Nagios to enable outage prediction</li>
-            <li>Wrote services to ensure server was running and JVM had not crashed</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Computer Consultant, College Jeanne d'Arc, October 2018 - June 2019</h4>
-          <p>Managed, configured, and repaired the school computer systems</p>
-          <ul>
-            <li>Investigated issues and reported required repairs to school management such as missing drivers</li>
-            <li>Created invoices and part orders to document repairs and expenditures</li>
-            <li>Taught staff how to use new systems in an efficient and reliable way</li>
-          </ul>
-        </div>
-        <div>
-          <h4>DevOps Intern, Liberty Global, November 2018</h4>
-          <p>Created a ReactJS application to display kafka topics in a human readable fashion.</p>
-          <ul>
-            <li>Used ReactJS components to create an intuitive and easily readable user interface</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Junior Web Developer, Blaze Telecommunications Inc., August 2018</h4>
-          <p>Re-created the company website using Jekyll.</p>
-          <ul>
-            <li>Created a Jekyll theme matching the original website's look</li>
-            <li>Configured automatic Jekyll building and deployment to a static site for a simplified workflow</li>
           </ul>
         </div>
       </div>
@@ -196,52 +160,6 @@
             <li>Designed, milled and printed 3D parts to upgrade the CNC mill.</li>
             <li>Redesigned and upgraded electronics system to include more powerful motors and a custom controller.</li>
             <li>Assembled parts for a much larger steel frame CNC mill.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>WICRS</h4>
-          <p>An internet chat system following a group/channel model. Written in Rust using tokio, warp, and
-            async-graphql. Features native iOS/macOS GUI written in Swift as well as a work in progress web UI using
-            React. <a href="https://github.com/wicrs/server">github.com/wicrs/server</a></p>
-          <ul>
-            <li>Implemented web APIs using RESTful and GraphQL models allowing for efficient access from different
-              clients</li>
-            <li>Used OpenPGP to enable encryption and identity verification</li>
-            <li>Added support for OAuth services such as Google and GitHub</li>
-            <li>Created a SwiftUI-based client application</li>
-            <li>Optimized message handling for millions of messages per second on a single node</li>
-            <li>Implemented search functionality using the Tantivy full-text search engine (similar to Lucene)</li>
-            <li>Supported live message notifications using web sockets</li>
-            <li>Made libraries for API support in web clients based on ReactJS, NodeJS, and NextJS</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Home Lab</h4>
-          <p>Home networking systems and servers. One network (family) running TrueNAS for media and kubernetes
-            provisioning over iSCSI. Another network (personal) managed through a NixOS flake.</p>
-          <ul>
-            <li>Bootstrapped various machines with linux installations</li>
-            <li>Used PXE boot and remote KVM access to configure machines</li>
-            <li>Configured Kubernetes nodes using ansible</li>
-            <li>Configured multiple computers and my dotfiles using a NixOS flake <a
-                href="https://github.com/willemml/dotfiles.nix">github.com/willemml/dotfiles.nix</a></li>
-            <li>Monitored systems using Nagios, Prometheus, and Grafana</li>
-            <li>Ran an elasticsearch instance for analyzing system and program logs</li>
-            <li>Configured a personal email server compliant with Google's spam filters</li>
-            <li>Upstreamed bug fixes to programs used in my dotfiles</li>
-            <li>Setup a Jenkins instance to run builds for my personal GitLab instance</li>
-          </ul>
-        </div>
-        <div>
-          <h4>RustWorks</h4>
-          <p>A collection of drivers for Numworks calculators written in Rust. <a
-              href="https://github.com/nw-rs/rustworks">github.com/nw-rs/rustworks</a>
-          <p>
-          <ul>
-            <li>Created a custom bare-metal embedded bootloader</li>
-            <li>Wrote drivers for QSPI flash based on datasheet specifications</li>
-            <li>Used gdb to debug code at an assembly level</li>
-            <li>Managed project tasks and external contributions using GitHub issues and pull requests</li>
           </ul>
         </div>
       </div>
